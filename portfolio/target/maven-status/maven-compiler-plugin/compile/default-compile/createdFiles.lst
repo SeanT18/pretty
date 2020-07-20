@@ -1,0 +1,3 @@
+com/google/sps/servlets/DataServlet.class
+com/google/sps/servlets/DeleteServlet.class
+com/google/sps/servlets/AuthenticationServlet.class
