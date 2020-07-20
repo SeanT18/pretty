@@ -5,38 +5,38 @@
 }
 
 #header {
-    padding: 30px;
-    background: #00CED1;
-    text-align: center;
+  padding: 30px;
+  background: #00ced1;
+  text-align: center;
 }
 
 #links {
-    padding: 25px;
-    display: inline-block;
+  padding: 25px;
+  display: inline-block;
 }
 
 footer {
   width: 100%;
-  position:fixed;
-  bottom:0;
-  left:0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
   text-align: center;
   padding: 3px;
   background-color: DarkSalmon;
   color: white;
 }
 
-.padding a{
-    padding: 10px;
+.padding a {
+  padding: 10px;
 }
 
 .img-container img {
-width: 300px;
-height: 400px;
+  width: 300px;
+  height: 400px;
 }
 
 .img-container {
-    width: 500px;
+  width: 500px;
 }
 
 #map {
@@ -44,5 +44,3 @@ height: 400px;
   height: 500px;
   width: 500px;
 }
-
-

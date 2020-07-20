@@ -1,65 +1,102 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjhk-U7NK6nQwmqSScCuZvO3l3_Q88Kps">
-    </script>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjhk-U7NK6nQwmqSScCuZvO3l3_Q88Kps"
+    ></script>
     <script src="script.js"></script>
   </head>
 
   <body onload="loadAll()">
-
     <header>
-    <div id ="header">
-        <h1 style="text-align:center"> Sean Tisdale Portfolio </h1>
-        <div class="padding">    
-            <a href="projects.html"> Projects </a>
-            <a href="gallery.html"> Gallery </a>
-        </div>    
-    </div>
+      <div id="header">
+        <h1 style="text-align: center;">Sean Tisdale Portfolio</h1>
+        <div class="padding">
+          <a href="projects.html"> Projects </a>
+          <a href="gallery.html"> Gallery </a>
+        </div>
+      </div>
     </header>
-        <div id="content">
-           <div id="images">
-                <img src="images/self-image.JPG" alt="Picture of me ;)" width="300" height="400" style="border-radius:50%" style="padding: 20px" > 
-                <img src="images/selfie2.jpg" alt="Picture of me ;)" width="300" height="400" style="border-radius:50%" style="padding: 20px"> 
-           </div>
-           <br>
-            <p>Hello!! My name is Sean Tisdale, welcome to my personal webpage :D. I am a Computer Science major who atttends North Carolina A&T University and I am from Charlotte NC. I first got into Computer Science when I was in High School.
-                During my junior years my school introduced a lot of new courses to take. Some of the ones I took were Computer Programming, Photoshop, and video game design. From these 3 courses I took over the school years 
-                computer programmming intereted me the most. After completing the course I did research and saw all of the things someone could do with computer science which always made me interested 
-                because sticking to one thing forever was always boring to me.I am currently mostly interested in databases and AI in computer science. hobbies I have are playing games, watching anime or tv,
-                and eating. I am currently trying to get into cooking more but it's a process so I'll give it time before calling it a hobby. </p>
-            <br>
-              <div id="login-container"></div>
-            <p>Click here to get a random fact:</p>
-            <button onclick="addRandomFact()">Facts</button>
-            <div id="fact-container"></div>
-            <br>
-            <p>Click here to get your comments!:</p>
-            <button onclick="addMessage()"> Show Messages</button>
-            <div id="message-container"></div>
-            <br>
-            <form action="/data" method="POST">
-                <p> Leave a comment!</p><br>
-                <input type="text" name="comments">
-                <input type="submit" value="Submit"/>
-                <br>
-                <button onclick="deleteData()">Delete all comments</button>
-                <br>
-            </form>
-            <p>Number of comments to show</p>
-            <input type="number" name="numComments" id="numInput" min="1" max="20">
-            <div id="map"></div>
-        </div>
+    <div id="content">
+      <div id="images">
+        <img
+          src="images/self-image.JPG"
+          alt="Picture of me ;)"
+          width="300"
+          height="400"
+          style="border-radius: 50%;"
+          style="padding: 20px;"
+        />
+        <img
+          src="images/selfie2.jpg"
+          alt="Picture of me ;)"
+          width="300"
+          height="400"
+          style="border-radius: 50%;"
+          style="padding: 20px;"
+        />
+      </div>
+      <br />
+      <p>
+        Hello!! My name is Sean Tisdale, welcome to my personal webpage :D. I am
+        a Computer Science major who atttends North Carolina A&T University and
+        I am from Charlotte NC. I first got into Computer Science when I was in
+        High School. During my junior years my school introduced a lot of new
+        courses to take. Some of the ones I took were Computer Programming,
+        Photoshop, and video game design. From these 3 courses I took over the
+        school years computer programmming intereted me the most. After
+        completing the course I did research and saw all of the things someone
+        could do with computer science which always made me interested because
+        sticking to one thing forever was always boring to me.I am currently
+        mostly interested in databases and AI in computer science. hobbies I
+        have are playing games, watching anime or tv, and eating. I am currently
+        trying to get into cooking more but it's a process so I'll give it time
+        before calling it a hobby.
+      </p>
+      <br />
+      <div id="login-container"></div>
+      <p>Click here to get a random fact:</p>
+      <button onclick="addRandomFact()">Facts</button>
+      <div id="fact-container"></div>
+      <br />
+      <p>Click here to get your comments!:</p>
+      <button onclick="addMessage()">Show Messages</button>
+      <div id="message-container"></div>
+      <br />
+      <form action="/data" method="POST">
+        <p>Leave a comment!</p>
+        <br />
+        <input type="text" name="comments" />
+        <input type="submit" value="Submit" />
+        <br />
+        <button onclick="deleteData()">Delete all comments</button>
+        <br />
+      </form>
+      <p>Number of comments to show</p>
+      <input type="number" name="numComments" id="numInput" min="1" max="20" />
+      <div id="map"></div>
+    </div>
   </body>
-  <br>
-<footer>
-      <div id="links">
-            <a href="https://github.com/SeanT18" style="padding: 20px"> Personal Github </a>
-            <a href="https://github.com/setisdale" style="padding: 20px"> School Github </a>
-            <a href="https://www.linkedin.com/in/sean-tisdale/" style="padding: 20px"> linkedin</a>
-        </div>
-</footer>
+  <br />
+  <footer>
+    <div id="links">
+      <a href="https://github.com/SeanT18" style="padding: 20px;">
+        Personal Github
+      </a>
+      <a href="https://github.com/setisdale" style="padding: 20px;">
+        School Github
+      </a>
+      <a
+        href="https://www.linkedin.com/in/sean-tisdale/"
+        style="padding: 20px;"
+      >
+        linkedin</a
+      >
+    </div>
+  </footer>
 </html>
